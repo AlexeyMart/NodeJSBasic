@@ -1,0 +1,8 @@
+{
+  "name": "Bruce Wayne",
+  "alterEgo": "Batman",
+  "address": {
+    "street": "Wayne Manor",
+    "city": "Gotham"
+  }
+}
