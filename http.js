@@ -18,8 +18,10 @@ const server = http.createServer((_request, response) => {
   //   HTML Response
   response.writeHead(200, { "Content-Type": "text/html" });
   // for large files
-  //   fs.createReadStream(__dirname + "/index.html").pipe(response);
-  const html = fs.readFileSync(__dirname + "/index.html", "utf-8");
+  // fs.createReadStream(__dirname + "/index.html").pipe(response);
+  const userName = "Some user name";
+  let html = fs.readFileSync(__dirname + "/index.html", "utf-8");
+  html = html.replace("{{userName}}", userName);
   response.end(html);
 });
 
