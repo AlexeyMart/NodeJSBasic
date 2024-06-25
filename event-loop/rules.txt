@@ -6,3 +6,5 @@ callback in microtask queue are executed in between the execution of callbacks i
 
 3. callbacks in the microtasks queue are executed before callbacks in the i/o queue
 I/O callbacks are executed after microtasks queue callbacks and timer queue callbacks
+
+4. I/O events are polled and callback functions are added to the I/O queue only after the I/O completed
