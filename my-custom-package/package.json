@@ -1,0 +1,19 @@
+{
+  "name": "greet-package-aamart",
+  "version": "1.0.0",
+  "description": "greeting package",
+  "keywords": [
+    "greet",
+    "nodeJS"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "upper-case": "^3.0.0"
+  }
+}
