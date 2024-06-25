@@ -1,0 +1,8 @@
+1. callbacks in the next tick queue are executed before callbacks in the promise queue
+callbacks is executed until queues is empty (no cross-between execution)
+
+2. callbacks in the microtasks queue are executed before callbacks in the timer queue
+callback in microtask queue are executed in between the execution of callbacks in the timer queue
+
+3. callbacks in the microtasks queue are executed before callbacks in the i/o queue
+I/O callbacks are executed after microtasks queue callbacks and timer queue callbacks
