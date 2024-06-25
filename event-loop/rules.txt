@@ -12,3 +12,5 @@ I/O callbacks are executed after microtasks queue callbacks and timer queue call
 5. check queue callbacks are executed after microtasks queue callbacks, timer queue callbacks and I/O queue callbacks
 
 6. microtasks queue tasks are executed in between check queue callbacks
+
+7. close queue in the last order
